@@ -1,0 +1,11 @@
+<input type="text"[(ngModel)] = "curso">
+
+<p> Me identifiquei mais com o curso: {{curso}}</p>
+
+<input type="number" [(ngModel)] = "numero1">
+<input type="number" [(ngModel)] = "numero2">
+
+<button (click)="somar()"> Somar</button>
+{{numero1}}+{{numero2}} Se clicar no Button = 
+
+{{somar()}}
