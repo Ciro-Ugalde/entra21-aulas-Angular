@@ -1,18 +1,20 @@
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
 
-    <app-header></app-header>
+    <app-header [hidden]="!seguranca.entrou"></app-header>
 
-    <app-menu></app-menu>
+    <app-menu [hidden]="!seguranca.entrou"></app-menu>
 
-    <div class="content-wrapper">
-      <section class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <router-outlet></router-outlet>
+    <div class="content-wrapper" style="min-height: 1301.27px;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card mt-5 p-4">
+              <router-outlet></router-outlet>
+            </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
 
     <footer class="main-footer">
